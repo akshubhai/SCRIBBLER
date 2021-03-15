@@ -10,6 +10,28 @@ body{
     color: blue;
 }
 
+.post-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .post-button {
+    background-color: #e6b800ee;
+    text-align: center;
+    margin: 7px;
+    padding: 10px 20px;
+    border: 2px solid grey;
+    font-size: 18px;
+  }
+  
+
+
 #signup-btn{
     background-color: darkblue;
     padding: 10px;
