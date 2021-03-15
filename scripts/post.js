@@ -29,3 +29,22 @@ function editPostContent() {
     postTitle.innerHTML = "UPDATED: " + modifiedPostTitle.value;
     postContent.innerHTML = "UPDATED: " + modifiedPostContent.value;
   }
+
+
+  // Method to add likes and update the count
+function incrementLikes() {
+    var likeButton = document.getElementById("add-likes");
+    likeButton.innerHTML =
+      '<i class="fa fa-thumbs-up ">' + "</i>" + "&nbsp;" + "Liked!";
+    likeButton.style.border = "none";
+    numberOfClick += 1;
+    if (numberOfClick != 0) {
+      if (numberOfClick == 1) {
+        document.getElementById("like-count").innerHTML =
+          numberOfClick + " person likes this!";
+      } else {
+        document.getElementById("like-count").innerHTML =
+          numberOfClick + " people likes this!";
+      }
+    }
+  }
