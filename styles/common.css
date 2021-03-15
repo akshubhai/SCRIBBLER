@@ -143,18 +143,29 @@ input {
     padding: 10px;
     border: none;
     color: #fff;
-    font-size: 14px;
-    position:absolute;
-    right: 140px;
+    padding: 10px 20px;
+    font-size: 15px;
     margin: 8px;
 }
 
 .signin-button{
     background-color: darkblue;
     padding: 10px;
+    border: none;
     color: #fff;
-    font-size: 14px;
-    position:absolute;
-    right: 50px;
+    padding: 10px 20px;
+    font-size: 15px;
     margin: 8px;
 }
+
+.bottom-banner {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .bottom-banner-text {
+    color: blue;
+    margin-left: 3px;
+    cursor: pointer;
+  }

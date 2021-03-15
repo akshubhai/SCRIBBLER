@@ -89,12 +89,12 @@ class Header extends HTMLElement {
               id="password"
               required
             />
-            <button type="submit" class="modal-popup-button">Sign In</button>
+            <button type="submit" class="modal-pop-up-button">Sign In</button>
             <p class="bottom-banner">
               Not a member?
               <span
                 class="bottom-banner-text"
-                onclick="hideSignIn();showSignUp()"
+                onclick="hideSignInModal();showSignUpModal()"
                 >Sign Up</span
               >
             </p>
@@ -118,3 +118,17 @@ function showSignUpModal() {
     var signUpModal = document.getElementById("signup-popup-modal");
     signUpModal.style.display = "none";
   }
+
+
+  // Show SignIn modal
+function showSignInModal() {
+    var signInModal = document.getElementById("signin-popup-modal");
+    signInModal.style.display = "flex";
+  }
+  
+  // Show SignIn modal
+  function hideSignInModal() {
+    var signInModal = document.getElementById("signin-popup-modal");
+    signInModal.style.display = "none";
+  }
+  
