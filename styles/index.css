@@ -99,24 +99,3 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: bold;
   }
-
-#signup-btn{
-    background-color: darkblue;
-    padding: 10px;
-    border: none;
-    color: #fff;
-    font-size: 12px;
-    cursor: pointer;
-    position:absolute;
-    right: 140px;
-}
-
-#signin-btn{
-    background-color: darkblue;
-    padding: 10px;
-    color: #fff;
-    font-size: 12px;
-    cursor: pointer;
-    position:absolute;
-    right: 50px;
-}

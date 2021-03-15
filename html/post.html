@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Reference required style sheet -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono|Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- postslist.css of postslist html -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css"/>
+
+    <!-- common.css for headers -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css"/>
+</head>
+
+<body>
+    <!-- Header-->
+    <header-section></header-section>
+
+    <!-- Post Content/Title -->
+    <div class="post">
+        <div id="header" class="post-title">
+          <h2 class="post-heading-class" id="post-heading-id">
+            Everything you should know about 'module' & 'require' in Nodejs
+          </h2>
+        </div>
+        <div class="post-sub-header">
+          <p class="post-owner-name">
+            Srishti Gupta
+            <span class="post-button">
+              <button
+                class="post-edit-save-button"
+                id="edit-button"
+                onclick="editPost()"
+              >
+                Edit&nbsp;
+                <i class="fa fa-pencil-square-o"></i>
+              </button>
+              <button
+                class="post-edit-save-button"
+                id="save-button"
+                onclick="savePost()"
+              >
+                Save&nbsp;
+                <i class="fa fa-floppy-o"></i>
+              </button>
+            </span>
+          </p>
+        </div>
+        <div class="post-content" id="content">
+          <p class="post-text">
+            Node.js treats each JavaScript file as a separate module. For
+            instance, if you have a file containing some code and this file is
+            named xyz.js, then this file is treated as a module in Node, and you
+            there should be a cursor which would enable the user to edit/erase/add
+            any text he/she wants in it. While the post title & text are in the
+            editable mode, the "Edit" button should be replaced by the "Save"
+            button, having the icon named "Save" displayed after the text in the
+            button. Node.js treats each JavaScript file as a separate module. For
+            instance, if you have a file containing some code and this file is
+            named xyz.js, then this file is treated as a module in Node, and you
+            there should be a cursor which would enable the user to edit/erase/add
+            any text he/she wants in it. While the post title & text are in the
+            editable mode, the "Edit" button should be replaced by the "Save"
+            button, having the icon named "Save" displayed after the text in the
+            button. Node.js treats each JavaScript file as a separate module. For
+            instance, if you have a file containing some code and this file is
+            named xyz.js, then this file is treated as a module in Node, and you
+            there should be a cursor which would enable the user to edit/erase/add
+            any text he/she wants in it. While the post title & text are in the
+            editable mode, the "Edit" button should be replaced by the "Save"
+            button, having the icon named "Save" displayed after the text in the
+            button.
+          </p>
+        </div>
+    
+</body>
+
+<!--import required js -->
+<script src="../scripts/post.js"></script>
+<script src="../scripts/common.js"></script>
+
+</html>
