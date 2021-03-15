@@ -1,6 +1,6 @@
 //show postlist
 function showAllPosts(){
-
+    window.location.href = "./html/postslist.html";
 }
 
 //Create post modal screen
@@ -11,7 +11,7 @@ function showCreatePost(){
 }
 
 // Closes Create Post modal window
-function hideCreatePost() {
+function hideCreatePostModal() {
     var createPostModal = document.getElementById("create-post-popup-modal");
     createPostModal.style.display = "none";
   }
