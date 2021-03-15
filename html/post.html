@@ -93,7 +93,28 @@
               Be the first person to like this!
             </p>
           </div>
-    
+
+          <!-- User Comments -->
+      <div class="comments">
+        <textarea
+          class="comment-box"
+          id="userComment"
+          type="text"
+          placeholder="Leave a comment..."
+        ></textarea>
+        <br />
+        <button class="add-comment-button" onclick="incrementComments(userComment)">
+          Comment
+        </button>
+      </div>
+
+      <!-- Show all user comments -->
+      <div class="comment-area">
+        <h4>All Comments</h4>
+        <div id="comment-list"></div>
+      </div>
+    </div>
+
 </body>
 
 <!--import required js -->

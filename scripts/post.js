@@ -31,20 +31,34 @@ function editPostContent() {
   }
 
 
-  // Method to add likes and update the count
+  // Add and update likes
 function incrementLikes() {
     var likeButton = document.getElementById("add-likes");
     likeButton.innerHTML =
       '<i class="fa fa-thumbs-up ">' + "</i>" + "&nbsp;" + "Liked!";
     likeButton.style.border = "none";
-    numberOfClick += 1;
-    if (numberOfClick != 0) {
-      if (numberOfClick == 1) {
+    clickCount += 1;
+    if (clickCount != 0) {
+      if (clickCount == 1) {
         document.getElementById("like-count").innerHTML =
-          numberOfClick + " person likes this!";
+          clickCount + " person likes this!";
       } else {
         document.getElementById("like-count").innerHTML =
-          numberOfClick + " people likes this!";
+          clickCount + " people likes this!";
       }
+    }
+  }
+
+  // Add comments
+function incrementComments(comment) {
+    if (comment.value.length > 0) {
+      var commentBox = document.getElementById("comment-list");
+      commentBox.style.display = "flex";
+      document.getElementById("comment-list").innerHTML +=
+        '<p id="comment-posted">' + comment.value + "</p>";
+      var userComment = document.getElementById("userComment");
+      userComment.value = userComment.defaultValue;
+    } else {
+      alert("Please enter some comment");
     }
   }
