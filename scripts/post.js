@@ -7,7 +7,7 @@ var modifiedPostContent;
 var clickCount = 0;
 
 // Edit button action
-function editPostContent() {
+function editPost() {
     postTitle.contentEditable = "true";
     postContent.contentEditable = "true";
     postTitle.style.border = "2px solid pink";
@@ -19,7 +19,7 @@ function editPostContent() {
   }
   
   // Save button action
-  function savePostContent() {
+  function savePost() {
     postContent.contentEditable = "false";
     postTitle.contentEditable = "false";
     postTitle.style.border = "none";
